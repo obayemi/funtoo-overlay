@@ -27,6 +27,7 @@ DEPEND="
 	i3? ( dev-libs/jsoncpp )
 	mpd? ( media-libs/libmpdclient )
 	network? ( net-wireless/wireless-tools )
+	ccache? ( ccache )
 	x11-libs/cairo
 	x11-libs/libxcb
 	x11-proto/xcb-proto
