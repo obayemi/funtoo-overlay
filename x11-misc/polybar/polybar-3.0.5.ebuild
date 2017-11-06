@@ -20,7 +20,7 @@ SLOT="0"
 inherit cmake-utils python-single-r1
 
 KEYWORDS="~amd64 ~x86"
-IUSE="xkeyboard network mpd i3 curl alsa ccache"
+IUSE="xkeyboard network mpd i3 curl alsa +ccache"
 
 DEPEND="
 	alsa? ( media-libs/alsa-lib )
