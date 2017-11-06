@@ -3,20 +3,37 @@
 
 EAPI=6
 
+XPP=xpp
+XPP_V=1.3.6
+I3IPCPP=i3ipcpp
+
 DESCRIPTION="A fast and easy-to-use tool for creating status bars"
 HOMEPAGE="https://github.com/jaagr/polybar"
 SRC_URI="
 	https://github.com/jaagr/polybar/archive/${PV}.tar.gz -> ${P}.tar.gz
-	https://github.com/jaagr/xpp/archive/1.3.6.tar.gz -> xpp-1.3.5.tar.gz
+	https://github.com/jaagr/xpp/archive/1.3.6.tar.gz -> xpp-1.3.6.tar.gz
 	https://github.com/jaagr/i3ipcpp/archive/v0.6.2.tar.gz -> i3ipcpp-0.6.2.tar.gz
 "
 
+PYTHON_COMPAT=( python2_7 )
 SLOT="0"
-inherit cmake-utils
+inherit cmake-utils python-single-r1
+
 KEYWORDS="~amd64 ~x86"
 IUSE="xkeyboard network mpd i3 curl alsa ccache"
 
-DEPEND=""
+DEPEND="
+	alsa? ( media-libs/alsa-lib )
+	i3? ( dev-libs/jsoncpp )
+	mpd? ( media-libs/libmpdclient )
+	network? ( net-wireless/wireless-tools )
+	x11-libs/cairo
+	x11-libs/libxcb
+	x11-proto/xcb-proto
+	x11-libs/xcb-util-image
+	x11-libs/xcb-util-wm
+	x11-libs/xcb-util-xrm
+"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
