@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "http://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+    <repo quality="experimental" status="unofficial">
+        <name>obayemi</name>
+        <description lang="en">Overlay used by obayemi to fix stuff he thinks broken (probably mainly add py3.6 to available python) or add missing features to some overlays</description>
+        <homepage>https://github.com/obayemi/funtoo-overlay</homepage>
+        <owner type="person">
+          <email>funtoo-ki@ikjpz.com</email>
+          <name>obayemi</name>
+        </owner>
+        <source type="git">https://github.com/obayemi/funtoo-overlay.git</source>
+        <source type="git">git://github.com/obayemi/funtoo-overlay.git</source>
+        <source type="git">git@github.com:obayemi/funtoo-overlay.git</source>
+        <feed>https://github.com/obayemi/funtoo-overlay/commits/master.atom</feed>
+    </repo>
+</repositories>
