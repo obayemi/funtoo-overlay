@@ -6,7 +6,7 @@
         <description lang="en">Overlay used by obayemi to fix stuff he thinks broken (probably mainly add py3.6 to available python) or add missing features to some overlays</description>
         <homepage>https://github.com/obayemi/funtoo-overlay</homepage>
         <owner type="person">
-          <email>funtoo-ki@ikjpz.com</email>
+          <email>funtoo-kit@ikjpz.com</email>
           <name>obayemi</name>
         </owner>
         <source type="git">https://github.com/obayemi/funtoo-overlay.git</source>
